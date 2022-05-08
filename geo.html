@@ -74,19 +74,19 @@
 
 				<p><img src="assets/images/r1.jpg" alt="" width="95%"></p>
 
-				<p>Se realizo una transformación en la estructura de almacenamiento de datos geográficos que se implementaba en la empresa, almacenando dicha información en formato .geojson y adaptando su estructura con el objetivo de poder visualizar dicha información en Power BI.</p>
+				<p>Se realizó una transformación en la estructura de almacenamiento de datos geográficos que se implementa en la empresa, almacenando dicha información en formato .geojson y adaptando su estructura con el objetivo de poder visualizar dicha información en Power BI.</p>
 				<h3>Estructura de Datos y Visualización de Datos</h3>
-				<p>Los datos geográficos proporcionados por la empresa se encontraban almacenados en multiples archivos por objeto, variando entre 4 a 7 archivos cuyo principal contenedor era un archivo .TAB, escencial para visualizar dicho objeto. Debido a esto la información geográfica contaba con las siguientes caracteristicas: </p>
+				<p>Los datos geográficos proporcionados por la empresa se encontraban almacenados en múltiples archivos por objeto, variando entre 4 a 7 archivos cuyo principal contenedor era un archivo .TAB, esencial para visualizar dicho objeto. Debido a esto la información geográfica contaba con las siguientes características: </p>
 				<ul>
 					<li>14.409 archivos con la información de rutas de actividad.</li>
 					<li>LineStrings desordenados, imposibilitando la visualización adecuada.</li>
 					<li>5.659 archivos con la información de las áreas de actividad.</li>
 					<li>Diferentes sistemas de coordenadas(CRS).</li>
-					<li>Formato incompatible con Power BI</li>
+					<li>Formato compatible con Power BI</li>
 				</ul>
-				<p>Con el objetivo de implementar un formato más adecuado de almacenamiento de datos geográficos en el cuál se implementace correciones y que fuese compatible con Power BI, se implemento scripts en Python. Los cuales ordenaron los LineStrings de las rutas en base a puntos de referencia de donde inician y terminan, además de estableccer como estandar el sistema de coordenadas EPSG: 4326.</p>
+				<p>Con el objetivo de implementar un formato más adecuado de almacenamiento de datos geográficos en el cuál se implementa correcciones y que fuese compatible con Power BI, se implementó scripts en Python. Los cuales ordenaron los LineStrings de las rutas en base a puntos de referencia de donde inician y terminan, además de establecer como estándar el sistema de coordenadas EPSG: 4326.</p>
 				<p><img src="assets/images/geo1.jpg" alt=""></p>
-				<p>Posterior a la implementación de los scripts de Python, la información geográfica incorporo las caracteristicas: </p>
+				<p>Posterior a la implementación de los scripts de Python, la información geográfica incorporó las características: </p>
 				<ul>
 					<li>3 archivos con la información de rutas de actividad.</li>
 					<li>Rutas debidamente direccionadas.</li>
@@ -94,7 +94,8 @@
 					<li>Sistema de coordenadas (CRS) estandarizado.</li>
 					<li>Formato compatible con Power BI</li>
 				</ul>
-				<p>Con el objetivo visualizar la información geográfica y adicionalmente incorporar un componente de análisis descriptivo relacionado al componente se opto por la implementación del software "Power BI", utilizando los objetos de visualización "Route Map" e "Icon Map". </p>
+				<p>Finalmente los archivos .Geojson se almacenaron en un DataWarehouse alojado en el servicio Azure y con el objetivo visualizar la información geográfica y adicionalmente incorporar un componente de análisis descriptivo relacionado al componente se optó por la implementación del software "Power BI", utilizando los objetos de visualización "Route Map" e "Icon Map". </p>
+
 				<p><img src="assets/images/geo2.jpg" alt="" width="50%"><img src="assets/images/geo3.jpg" alt="" width="50%"></p>
 				
 			</article>
